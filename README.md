@@ -196,7 +196,7 @@ Para subir imágenes desde el admin se usa el servicio de ImgBB.
 En `src/services/uploadImage.js` se utiliza la variable de entorno:
 
 ```txt
-VITE_IMGBB_API_KEY
+IMGBB_API_KEY
 ```
 
 Configuración:
@@ -204,7 +204,7 @@ Configuración:
 1. Crear un archivo `.env` en la raíz del proyecto:
 
 ```env
-VITE_IMGBB_API_KEY=TU_API_KEY_DE_IMGBB
+IMGBB_API_KEY=TU_API_KEY_DE_IMGBB
 ```
 
 2. Reiniciar el servidor de Vite para que tome el valor.
@@ -251,7 +251,7 @@ npm install
 Crear `.env`:
 
 ```env
-VITE_IMGBB_API_KEY=TU_API_KEY_DE_IMGBB
+IMGBB_API_KEY=TU_API_KEY_DE_IMGBB
 ```
 
 4. **Levantar en modo desarrollo**

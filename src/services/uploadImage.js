@@ -1,16 +1,16 @@
 /**
  * Sube un archivo a ImgBB y devuelve la URL publica de la imagen.
- * Necesita la variable de entorno: VITE_IMGBB_API_KEY
+ * Necesita la variable de entorno: IMGBB_API_KEY
  */
 export async function uploadImage(file) {
   if (!file) {
     throw new Error("No se recibió ninguna imagen");
   }
 
-  const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
+  const apiKey = import.meta.env.IMGBB_API_KEY;
   if (!apiKey) {
     throw new Error(
-      "Falta configurar VITE_IMGBB_API_KEY para subir imágenes a ImgBB"
+      "Falta configurar IMGBB_API_KEY para subir imágenes a ImgBB"
     );
   }
 
