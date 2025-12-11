@@ -35,7 +35,7 @@
     "id": "5",
     "name": "Buzo Canguro Sonder Melange Linea Argentina 2024",
     "price": 51999,
-    "category": "camisetas-de-juego",
+    "category": "camperas-y-buzos",
     "description": "BUZO C/CAP. RÚSTICO LIVIANO ELASTIZAD GRIS MELANGE OSCURO C/ BOLSILLOS Y ESTAMPAS",
     "imageUrl": "/images/buzo-canguro-sonder-melange-linea-argentina-2024.webp"
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "name": "Campera Sonder impermeable Modelo Tecno",
     "price": 64999,
-    "category": "camisetas-de-juego",
+    "category": "camperas-y-buzos",
     "description": "Campera bomber de tela impermeable estampada tecno Argentina, con capucha y bolsillos.",
     "imageUrl": "/images/campera-sonder-impermeable-modelo-tecno.webp"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "name": "TheCecco – Buzo Canguro Logo TheCecco",
     "price": 27999,
-    "category": "camisetas-de-juego",
+    "category": "camperas-y-buzos",
     "description": "El buzo hoodie The Cecco Gris combina la comodidad de un buzo de algodón con la pasión por el capitán de la Selección Argentina de Voley.",
     "imageUrl": "/images/buzo-canguro-thececco-logo.webp"
   },
