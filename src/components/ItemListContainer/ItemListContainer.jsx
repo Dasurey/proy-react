@@ -5,7 +5,7 @@ import "./ItemListContainer.css";
 import { getProducts } from "../../services/products";
 
 export const ItemListContainer = ({ titulo = "Productos" }) => {
-  const { categoryId } = useParams(); // /category/:categoryId  -> alimentos | higiene | juguetes | accesorios
+  const { categoryId } = useParams(); // /category/:categoryId  -> camisetas-de-juego | pelotas | camperas-y-buzos | accesorios
   const [products, setProducts] = useState([]);
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState(null);

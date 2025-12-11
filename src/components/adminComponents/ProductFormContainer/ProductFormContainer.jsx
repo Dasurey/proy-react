@@ -15,9 +15,9 @@ const INITIAL_VALUES = {
 
 const CATEGORY_OPTIONS = [
   { value: "camisetas-de-juego", label: "Camisetas de Juego" },
-  { value: "pelotas", label: "Pelotas" },
-  { value: "accesorios", label: "Accesorios" },
   { value: "camperas-y-buzos", label: "Camperas y Buzos" },
+  { value: "pelotas", label: "Pelotas" },
+  { value: "accesorios", label: "Accesorios" }
 ];
 
 export default function ProductFormContainer() {
