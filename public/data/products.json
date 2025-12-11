@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Camiseta ISHIKAWA SIR PERUGiA temporada 2024-25",
+    "price": 18999,
+    "category": "camisetas-de-juego",
+    "description": "Tené la Camiseta de Yuki Ishikawa en el SIR PERUGIA de Italia. Modelo utilizado para los partidos oficiales",
+    "imageUrl": "/images/Camiseta-ISHIKAWA-SIR-PERUGiA-temporada-2024-25.webp"
+  },
+  {
+    "id": "2",
+    "name": "Camiseta Lecoq Oficial Seleccion Argentina de Voley (Negra Con mangas)",
+    "price": 66999,
+    "category": "camisetas-de-juego",
+    "description": "Camiseta oficial LECOQ SPORTIF de la Selección Argentina de Voley.",
+    "imageUrl": "/images/Camiseta-Lecoq-Oficial-Seleccion-Argentina-de-Voley-Negra-Con-mangas.webp"
+  },
+  {
+    "id": "3",
+    "name": "Mangas Thorium Lisa",
+    "price": 11499,
+    "category": "accesorios",
+    "description": "Las Mangas de Voley Thorium son de Lycra De Compresión – Thorium (protector Antebrazos). El material es polisap (es una lycra más gruesa).",
+    "imageUrl": "/images/Mangas-Thorium-Lisa.webp"
+  },
+  {
+    "id": "4",
+    "name": "Pelota Mikasa V200W Competición",
+    "price": 109999,
+    "category": "pelotas",
+    "description": "Pelota Mikasa V200W Competición. Super resistente y duradera, ideal para partidos y entrenamientos de alto rendimiento.",
+    "imageUrl": "/images/Pelota-Mikasa-V200W-Competicion.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Buzo Canguro Sonder Melange Linea Argentina 2024",
+    "price": 51999,
+    "category": "camisetas-de-juego",
+    "description": "BUZO C/CAP. RÚSTICO LIVIANO ELASTIZAD GRIS MELANGE OSCURO C/ BOLSILLOS Y ESTAMPAS",
+    "imageUrl": "/images/buzo-canguro-sonder-melange-linea-argentina-2024.webp"
+  },
+  {
+    "id": "6",
+    "name": "Campera Sonder impermeable Modelo Tecno",
+    "price": 64999,
+    "category": "camisetas-de-juego",
+    "description": "Campera bomber de tela impermeable estampada tecno Argentina, con capucha y bolsillos.",
+    "imageUrl": "/images/campera-sonder-impermeable-modelo-tecno.webp"
+  },
+  {
+    "id": "7",
+    "name": "TheCecco – Buzo Canguro Logo TheCecco",
+    "price": 27999,
+    "category": "camisetas-de-juego",
+    "description": "El buzo hoodie The Cecco Gris combina la comodidad de un buzo de algodón con la pasión por el capitán de la Selección Argentina de Voley.",
+    "imageUrl": "/images/buzo-canguro-thececco-logo.webp"
+  },
+  {
+    "id": "8",
+    "name": "Rodilleras de Voley Thorium Confort. Talle único. Simil Nike",
+    "price": 14999,
+    "category": "accesorios",
+    "description": "Las Rodilleras Thorium Confort para Voley, Handball, Newcom, son un modelo similar a las Rodilleras Nike Streak pero un poco mas largas y al ser talle único  es de un material mas flexible. Cuenta con un panel frontal y uno en cada lateral, lo que proporciona una muy buena protección de toda la rodilla.",
+    "imageUrl": "/images/rodilleras-thorium-confort-talle-unico-simil-nike.webp"
+  },
+  {
+    "id": "9",
+    "name": "Rodilleras Nassau Cover",
+    "price": 16999,
+    "category": "accesorios",
+    "description": "Las Rodilleras Nassau Cover se destacan principalmente por su comodidad. Están confeccionadas con PU espumado que le otorga máxima seguridad y protección a tus rodillas durante tus entrenamientos de Voley, Newcom, Handball.",
+    "imageUrl": "/images/rodilleras-nassau-cover.webp"
+  },
+  {
+    "id": "10",
+    "name": "Medias deportiva ANTIDESLIZANTE GRIFF arriba tobillo (1 par)",
+    "price": 10499,
+    "category": "accesorios",
+    "description": "Medias deportivas antideslizantes GRIFF, diseñadas para brindar comodidad y soporte durante la actividad física.",
+    "imageUrl": "/images/medias-antideslizantes-griff.webp"
+  },
+  {
+    "id": "11",
+    "name": "Pack x 2 Pares de Medias LeCoq Sportif",
+    "price": 19999,
+    "category": "accesorios",
+    "description": "Pack x 2 pares de Medias LeCoq Sportif. LA MARCA DEPORTIVA FRANCESA DESDE 1882. Excelente Calidad.",
+    "imageUrl": "/images/pack-2-pares-medias-lecoq-sportif.webp"
+  },
+  {
+    "id": "12",
+    "name": "Pelota de Voley Reebok Soft Touch",
+    "price": 44999,
+    "category": "pelotas",
+    "description": "La Pelota de Voley Reebok Soft Touch Brinda precisión y velocidad para disfrutar de un partido de vóley en donde quieras. Extrema suavidad en el golpeo por su terminación SOFT TOUCH.",
+    "imageUrl": "/images/pelota-de-voley-reebok-soft-touch.webp"
+  },
+  {
+    "id": "13",
+    "name": "Pelota de Voley Soft Touch 5.0 DRB",
+    "price": 27999,
+    "category": "pelotas",
+    "description": "Brinda precisión y velocidad para disfrutar de un partido de vóley en donde quieras. Extrema suavidad en el golpeo por su terminación SOFT TOUCH",
+    "imageUrl": "/images/pelota-de-voley-soft-touch-5_0-drb.webp"
+  },
+  {
+    "id": "14",
+    "name": "Pelota MIKASA Beach Voley Colorfan",
+    "price": 75999,
+    "category": "pelotas",
+    "description": "La Pelota Voley MIKASA de Beach Voley modelos COLORFAN son Ideales para entrenamiento y ocio exterior.",
+    "imageUrl": "/images/pelota-mikasa-beach-voley-colorfan.webp"
+  },
+  {
+    "id": "15",
+    "name": "Camiseta Lecoq Oficial Selecciona Argentina de Voley (Blanca sin mangas)",
+    "price": 49999,
+    "category": "camisetas-de-juego",
+    "description": "Camiseta oficial LECOQ SPORTIF ALBICELESTE de la Selección Argentina de Voley.",
+    "imageUrl": "/images/camiseta-lecoq-albicelete.webp"
+  }
+]

@@ -1,0 +1,13 @@
+.Header {
+  /* Header neutro, sin barra propia */
+  position: static;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.Header__inner {
+  margin: 0;
+  padding: 0;
+}

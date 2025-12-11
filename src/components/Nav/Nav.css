@@ -1,0 +1,332 @@
+/* Navegación dentro del Header (el Header ya maneja full-width y sticky) */
+.Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 52px;
+  padding: 0.4rem 1.25rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin: 0;
+  z-index: 200; /* por encima del contenido y del footer */
+}
+
+.Nav__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.Nav__right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Lista de links */
+.Nav__list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Link base */
+.Nav__link {
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+/* Hover / focus accesible */
+.Nav__link:hover,
+.Nav__link:focus-visible {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  outline: none; /* usamos el fondo + borde como indicador */
+}
+
+/* Estado ACTIVO*/
+.Nav__link--active,
+.Nav__link.active,
+.Nav__link[aria-current="page"] {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+
+/* Carrito a la derecha */
+.Nav__cart {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.Nav__cart:hover,
+.Nav__cart:focus-visible {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+/* Badge del carrito */
+.Nav__badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #ff4d6d;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.Nav__logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+/* === BRAND con logo a la izquierda === */
+.Nav__brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 8px;
+  text-decoration: none;
+  color: #111827;
+}
+
+/* Texto de marca al lado del ícono */
+.Nav__brandText {
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Modo oscuro automático (si usás prefers-color-scheme) */
+@media (prefers-color-scheme: dark) {
+  .Nav__brand {
+    color: #FFEDFA;
+  }
+  .Nav__logo {
+    color: #C769F5;
+  }
+}
+
+/* Auth */
+.Nav__auth {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.Nav__user {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.Nav__authBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.9rem;
+  margin-left: 0.25rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.12s ease, color 0.12s ease,
+    box-shadow 0.12s ease, transform 0.05s ease;
+}
+
+/* botón “Ingresar” */
+.Nav__authBtn--login {
+  background: linear-gradient(135deg, #6E1F6E, #C00AC0);
+  color: #FFEDFA;
+  box-shadow: 0 8px 18px #C769F5;
+}
+
+/* botón “Cerrar sesión” */
+.Nav__authBtn--logout {
+  background: #f3f4f6;
+  color: #374151;
+  box-shadow: 0 4px 10px rgba(148, 163, 184, 0.35);
+}
+
+.Nav__authBtn:hover {
+  transform: translateY(-1px);
+}
+
+.Nav__authBtn--login:hover {
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.4);
+  filter: brightness(1.03);
+}
+
+.Nav__authBtn--logout:hover {
+  background: #e5e7eb;
+}
+
+.Nav__authBtn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Botón hamburguesa */
+.Nav__toggle {
+  display: none; /* se muestra solo en mobile */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #f8f5ff;
+  cursor: pointer;
+}
+
+.Nav__toggle span {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: #333;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* estado abierto (cruce tipo X) */
+.Nav__toggle--open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.Nav__toggle--open span:nth-child(2) {
+  opacity: 0;
+}
+.Nav__toggle--open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Ajustes responsivos mínimos */
+@media (max-width: 1024px) {
+  .Nav {
+    gap: 10px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    flex-wrap: nowrap;
+  }
+
+  .Nav__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .Nav__brand {
+    gap: 8px;
+    margin-right: 4px;
+  }
+
+  /* Botón hamburguesa visible en pantallas chicas */
+  .Nav__toggle {
+    display: inline-flex;
+  }
+
+  /* 👉 SOLO ocultamos la lista de links de categorías por defecto */
+  .Nav__list {
+    display: none;
+  }
+
+  /* Carrito + login SIEMPRE visibles arriba a la derecha */
+  .Nav__right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+
+  .Nav__auth {
+    gap: 0.4rem;
+  }
+
+  /* ocultamos el saludo para no recargar */
+  .Nav__user {
+    display: none;
+  }
+
+  /* 🔽 ESTADO ABIERTO: panel desplegable lindo */
+  .Nav.Nav--open .Nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    position: absolute;
+    top: 100%; /* justo debajo de la barra */
+    left: 0;
+    right: 0;
+
+    padding: 0.75rem 1.25rem 1rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+    z-index: 210;
+  }
+
+  .Nav.Nav--open .Nav__list li {
+    width: 100%;
+  }
+
+  .Nav.Nav--open .Nav__link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-radius: 999px;
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+/* Desktop: nos aseguramos que se vea todo normal */
+@media (min-width: 1025px) {
+  .Nav__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .Nav__authBtn--logout,
+  .Nav__authBtn--login {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.7rem;
+  }
+}

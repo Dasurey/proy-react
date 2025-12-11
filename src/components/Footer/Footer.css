@@ -1,0 +1,23 @@
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+  padding: 12px 24px;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 100; /* para que quede encima del contenido */
+}
+
+.Footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Footer__copy {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,39 @@
+.ItemList__grid {
+  display: grid;
+  /* 👇 auto-fit hace que aproveche mejor el espacio que auto-fill */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+/* Opcional: que en pantallas MUY grandes no se estire infinito */
+@media (min-width: 1400px) {
+  .ItemList__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.ItemList__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 14px;
+}
+
+.ItemList__link:focus {
+  outline: 2px solid #6e44ff;
+  outline-offset: 4px;
+  border-radius: 14px;
+}
+
+.ItemList__link:hover .Item {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.ItemList__empty {
+  opacity: 0.75;
+  padding: 8px 0;
+  text-align: center;
+}
