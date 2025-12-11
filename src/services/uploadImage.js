@@ -7,10 +7,10 @@ export async function uploadImage(file) {
     throw new Error("No se recibió ninguna imagen");
   }
 
-  const apiKey = import.meta.env.IMGBB_API_KEY;
+  const apiKey = import.meta.env.VITE_IMGBB_API_KEY;
   if (!apiKey) {
     throw new Error(
-      "Falta configurar IMGBB_API_KEY para subir imágenes a ImgBB"
+      "Falta configurar VITE_IMGBB_API_KEY para subir imágenes a ImgBB"
     );
   }
 
